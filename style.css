@@ -1,1 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto ;
+    background-color: lightblue;
+    height: 10vh;
+    padding: 0 5%;
+}
+footer {
+    background-color: antiquewhite;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: lightslategray;
+}
+.gallery {
+    background-color: lightskyblue;
+    display: grid;
+    padding: 10px;
+    gap: 20px;
+    /* Esse autofit coloca o número de colunas necessário para preencher a pág. */ 
+     grid-template-columns: repeat(auto-fit, 150px);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;  
+    
+   
+section > figure {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+    
+}
+
+
+img {
+    border: 3px solid black;
+}
+
+ aside {
+    background-color: beige;
+ }
